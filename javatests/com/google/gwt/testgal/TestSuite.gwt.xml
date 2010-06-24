@@ -1,0 +1,19 @@
+<!-- A module containing TestGal's test suite.  This module is used directly
+ when running tests in a standard JUnit test runner via GwtTestCase, and is
+ also inherited by the gallery module that runs TestGal's test suite in a
+ browser. -->
+<module>
+
+    <inherits name='com.google.gwt.user.User'/>
+    <inherits name="com.google.gwt.junit.JUnit"/>
+    <inherits name="com.google.gwt.testgal.TestGal"/>
+
+    <source path="client"/>
+    <source path="shared"/>
+    <source path="api/client"/>
+    <source path="api/shared"/>
+    <entry-point class='com.google.gwt.testgal.api.client.EmptyEntryPoint'/>
+
+    <!-- turn off rebind so we can run tests outside the test gallery -->
+    <set-property name="testgal.rebind" value="none"/>
+</module>

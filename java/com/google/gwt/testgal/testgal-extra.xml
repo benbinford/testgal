@@ -1,0 +1,15 @@
+  <!-- controls which classes the testgal module will rebind;
+       either all JUnit test cases or none -->
+  <define-property name="testgal.rebind" values="testcase,none" />
+
+  <!-- Rebind is on by default because the common case is to use
+       this module from a test gallery -->
+  <set-property name="testgal.rebind" value="testcase"/>
+
+  <generate-with class="com.google.gwt.testgal.rebind.TestSourceGenerator">
+    <all>
+        <when-type-assignable class="junit.framework.TestCase"/>
+        <when-property-is name="testgal.rebind" value="testcase"/>
+    </all>
+  </generate-with>
+  <super-source path="super"/>
