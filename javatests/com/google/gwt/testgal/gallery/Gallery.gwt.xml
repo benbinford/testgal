@@ -8,5 +8,4 @@
     <!-- turn on rebinding because we explicitly turned it off in the test suite -->
     <set-property name="testgal.rebind" value="testcase"/>
 
-
 </module>

@@ -16,12 +16,14 @@
 package com.google.gwt.testgal.testing.shared;
 
 import com.google.gwt.user.client.rpc.RemoteService;
+import com.google.gwt.user.client.rpc.RemoteServiceRelativePath;
 
 /**
  * A service that returns its input.
  *
  * @author Brian Slesinsky
  */
+@RemoteServiceRelativePath("echo")
 public interface EchoService extends RemoteService {
   String echo(String input);
 }

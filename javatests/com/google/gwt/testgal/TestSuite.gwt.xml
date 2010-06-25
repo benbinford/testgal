@@ -1,12 +1,16 @@
-<!-- A module containing TestGal's test suite.  This module is used directly
- when running tests in a standard JUnit test runner via GwtTestCase, and is
- also inherited by the gallery module that runs TestGal's test suite in a
- browser. -->
 <module>
+
+  <!--
+    A module containing TestGal's self tests.  (Not needed to use TestGal in
+    to run your own tests.) This module can be used directly when running TestGal's
+    self tests in a different test runner, or inherited to run TestGal's self tests
+    with TestGal.
+  -->
 
     <inherits name='com.google.gwt.user.User'/>
     <inherits name="com.google.gwt.junit.JUnit"/>
     <inherits name="com.google.gwt.testgal.TestGal"/>
+    <inherits name="com.google.gwt.testgal.testing.Testing"/>
 
     <source path="client"/>
     <source path="shared"/>
@@ -14,6 +18,6 @@
     <source path="api/shared"/>
     <entry-point class='com.google.gwt.testgal.api.client.EmptyEntryPoint'/>
 
-    <!-- turn off rebind so we can run tests outside the test gallery -->
+    <!-- turn off rebind so we can run tests with an alternate test runner. -->
     <set-property name="testgal.rebind" value="none"/>
 </module>

@@ -1,11 +1,13 @@
 <module>
 
   <!--
-  A module for running tests in a gallery.  Note: do not inherit from
-  this module in any module in which you want to run a GWTTestCase in the normal
-  way using JUnit.  This is because we override how deferred binding is done for
-  all subclasses of junit.framework.Test and this includes GWTTestCase.  Instead
-  you should create a separate module for running tests in a gallery.
+     The core TestGal module. You should inherit from this module in order
+     to run your own tests using TestGal.
+
+     However, you should *not* inherit from this module when we running your
+     tests in some other test runner. This is because TestGal redefines
+     GWTTestCase in such a way that other test runners probably won't work.
+     (This is done in super/com/google/gwt/junit/client/GWTTestCase.)
   -->
 
   <inherits name='com.google.gwt.user.User'/>
@@ -13,6 +15,7 @@
   <inherits name="com.google.gwt.user.theme.standard.Standard"/>
 
   <inherits name="com.google.gwt.testgal.api.Api"/>
+  <inherits name="com.google.gwt.testgal.testing.Testing"/>
 
   <entry-point class='com.google.gwt.testgal.api.client.EmptyEntryPoint'/>
 
@@ -27,5 +30,6 @@
         <when-property-is name="testgal.rebind" value="testcase"/>
     </all>
   </generate-with>
+  <super-source path="super"/>
 
 </module>
