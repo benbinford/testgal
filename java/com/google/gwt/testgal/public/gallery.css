@@ -17,145 +17,144 @@
 /* top-level layout */
 
 .tg-top {
-    margin-left: 4px;
-    margin-right: 4px;
-    background-color: white;
+  margin-left: 4px;
+  margin-right: 4px;
+  background-color: white;
 }
 
 .tg-splitpanel {
-    border: 4px solid #adf;
+  border: 4px solid #adf;
 }
 
 .tg-leftside {
-    width: 100%;
-    height: 100%;
-    margin: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
 }
 
 .tg-rightside {
-    width: 100%;
-    height: 95%;
+  width: 100%;
+  height: 95%;
 }
 
 /* top */
 
 .tg-progress-bar {
-    border-style: solid;
-    border-width: 1px;
-    height: 16px;
-    margin-top: 4px;
-    margin-bottom: 4px;
-    background-color: white;
+  border-style: solid;
+  border-width: 1px;
+  height: 16px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  background-color: white;
 }
 
 .tg-progress-bar div {
-    height: 16px;
+  height: 16px;
 }
 
 /* left side */
 
 .tg-status {
-    display: inline
+  display: inline
 }
 
 .tg-status-indicator {
-    padding-left: 1ex;
-    width: 10ex;
+  padding-left: 1ex;
+  width: 10ex;
 }
 
 .tg-passed {
-    color: green;
+  color: green;
 }
 
 .tg-failed {
-    color: red;
+  color: red;
 }
 
 /* right side */
 
 .tg-contents {
-    margin: 1em;
+  margin: 1em;
 }
 
 .tg-contents h1 {
-    margin-top: 0;
-    padding-top: 0;
+  margin-top: 0;
+  padding-top: 0;
 }
 
 .tg-contents-heading {
-    text-decoration: underline;
-    font-weight: bold;
-    font-size: 14pt;
-    margin-top: 1ex;
-    margin-bottom: 2pt;
+  text-decoration: underline;
+  font-weight: bold;
+  font-size: 14pt;
+  margin-top: 1ex;
+  margin-bottom: 2pt;
 }
 
 .tg-contents-section {
-    margin-left: 2em;
-    margin-top: 2pt;
-    margin-bottom: 2pt;
+  margin-left: 2em;
+  margin-top: 2pt;
+  margin-bottom: 2pt;
 }
 
 .tg-section {
-    margin: 1em;
+  margin: 1em;
 }
 
 .tg-section h2 {
-    margin-top: 0;
-    padding-top: 0;
+  margin-top: 0;
+  padding-top: 0;
 }
 
-
 .tg-section p, .tg-section div, .tg-rerun-link {
-    margin-left: 1em;
+  margin-left: 1em;
 }
 
 .tg-section-method {
-    text-decoration: underline;
-    font-weight: bold;
-    margin-top: 2pt;
-    margin-bottom: 2pt;
-    margin-left: 1em;
+  text-decoration: underline;
+  font-weight: bold;
+  margin-top: 2pt;
+  margin-bottom: 2pt;
+  margin-left: 1em;
 }
 
 .tg-testresult {
-    margin: 1em;
+  margin: 1em;
 }
 
 .tg-testresult-section {
-    margin-top: 1em;
-    margin-bottom: 1em;
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
 
 .tg-snapshot-tabs {
-    width: 100%;
+  width: 100%;
 }
 
 .tg-java-object-snapshot {
-    border: 1px groove gray;
-    margin-left: auto;
-    margin-right: auto;
-    min-height: 12pt;
+  border: 1px groove gray;
+  margin-left: auto;
+  margin-right: auto;
+  min-height: 12pt;
 }
 
 .tg-diff {
-    margin-left: auto;
-    margin-right: auto;
-    min-height: 12pt;
-    border-collapse: separate;
-    border-spacing: 4px;
+  margin-left: auto;
+  margin-right: auto;
+  min-height: 12pt;
+  border-collapse: separate;
+  border-spacing: 4px;
 }
 
 .tg-diff-selected {
-    background-color: #fcc;
+  background-color: #fcc;
 }
 
 .tg-rendered-widget-hover {
-    background-color: #eee;
+  background-color: #eee;
 }
 
 .tg-tag {
-    color: #008;
+  color: #008;
 }
 
 .tg-demo {
@@ -166,10 +165,10 @@
 }
 
 .tg-caption-panel {
-    width: 100%;
-    padding-left: 1cm;
-    padding-right: 1cm;
-    margin-bottom: 8pt;
+  width: 100%;
+  padding-left: 1cm;
+  padding-right: 1cm;
+  margin-bottom: 8pt;
 }
 
 .tg-error {
@@ -177,6 +176,6 @@
 }
 
 .tg-testresult-footer {
-    margin-top: 12pt;
-    margin-bottom: 2pt;
+  margin-top: 12pt;
+  margin-bottom: 2pt;
 }
