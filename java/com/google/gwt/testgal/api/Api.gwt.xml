@@ -1,0 +1,16 @@
+<module>
+
+  <!-- A module containing classes to be used from within JUnit test cases to talk
+   to the test runner. The classes within 'shared' should work in any test runner, but
+   have enhanced functionality when run from within a test gallery.
+  -->
+
+  <inherits name='com.google.gwt.user.User'/>
+  <inherits name="com.google.gwt.junit.JUnit"/> <!-- required to compile JUnit classes -->
+
+  <entry-point class='com.google.gwt.testgal.api.client.EmptyEntryPoint'/>
+
+  <source path="client"/>
+  <source path="shared"/>  
+
+</module>

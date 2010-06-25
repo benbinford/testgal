@@ -1,0 +1,9 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Run self tests (dev mode)" type="GWT.ConfigurationType" factoryName="GWT Configuration">
+    <module name="SelfTestApp" />
+    <option name="RUN_PAGE" value="/com.google.gwt.testgal.gallery.Gallery/gallery.html" />
+    <RunnerSettings RunnerId="Run" />
+    <ConfigurationWrapper RunnerId="Run" />
+    <method />
+  </configuration>
+</component>

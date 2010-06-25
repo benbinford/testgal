@@ -1,0 +1,16 @@
+<module>
+
+    <!--
+      Contains a simple GWT-RPC service for use in TestGal's own self tests.
+      You don't need this module to use TestGal in your own tests.
+    -->
+
+    <inherits name='com.google.gwt.user.User'/>
+
+    <source path="shared"/>
+
+    <!-- Make the servlet available in development mode. -->
+    <!-- (The path must match the last part of the url-pattern for the same servlet in web.xml) -->
+    <servlet path="/echo" class="com.google.gwt.testgal.testing.server.EchoServiceImpl" />
+
+</module>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="gwt" name="GWT">
+      <configuration>
+        <setting name="compilerMaxHeapSize" value="128" />
+        <setting name="gwtScriptOutputStyle" value="DETAILED" />
+        <setting name="gwtSdkUrl" value="file://$GWT_SDK$" />
+        <packaging>
+          <module name="com.google.gwt.testgal.TestGal" path="/com.google.gwt.testgal.TestGal" />
+          <module name="com.google.gwt.testgal.TestSuite" path="/com.google.gwt.testgal.TestSuite" />
+          <module name="com.google.gwt.testgal.api.Api" path="/com.google.gwt.testgal.api.Api" />
+          <module name="com.google.gwt.testgal.gallery.Gallery" path="/com.google.gwt.testgal.gallery.Gallery" />
+          <module name="com.google.gwt.testgal.testing.Testing" path="/com.google.gwt.testgal.testing.Testing" />
+        </packaging>
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/java">
+      <sourceFolder url="file://$MODULE_DIR$/java" isTestSource="false" />
+      <excludeFolder url="file://$MODULE_DIR$/java/com/google/gwt/testgal/testing" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="junit" level="project" />
+    <orderEntry type="library" name="gwt-user" level="project" />
+    <orderEntry type="library" name="gwt-dev" level="project" />
+  </component>
+</module>
+
