@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="gwt" name="GWT">
+      <configuration>
+        <setting name="compilerMaxHeapSize" value="128" />
+        <setting name="gwtScriptOutputStyle" value="DETAILED" />
+        <setting name="gwtSdkUrl" value="file://$GWT_SDK$" />
+        <setting name="webFacet" value="Web" />
+        <packaging>
+          <module name="Gallery" path="/Gallery" />
+          <module name="Testing" path="/com.google.gwt.testgal.testing.Testing" />
+          <module name="com.google.gwt.testgal.TestSuite" path="/com.google.gwt.testgal.TestSuite" />
+          <module name="com.google.gwt.testgal.gallery.Gallery" path="/com.google.gwt.testgal.gallery.Gallery" />
+        </packaging>
+      </configuration>
+    </facet>
+    <facet type="web" name="Web">
+      <configuration>
+        <descriptors>
+          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/webapps/selftest/WEB-INF/web.xml" />
+        </descriptors>
+        <webroots>
+          <root url="file://$MODULE_DIR$/webapps/selftest" relative="/" />
+        </webroots>
+        <sourceRoots>
+          <root url="file://$MODULE_DIR$/java/com/google/gwt/testgal/testing" />
+        </sourceRoots>
+        <context-artifact name="SelfTestWebApp" />
+      </configuration>
+      <facet type="google-app-engine" name="Google App Engine">
+        <configuration>
+          <sdk-home-path>$APPENGINE_SDK$</sdk-home-path>
+        </configuration>
+      </facet>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/java/com/google/gwt/testgal/testing">
+      <sourceFolder url="file://$MODULE_DIR$/java/com/google/gwt/testgal/testing" isTestSource="false" packagePrefix="com.google.gwt.testgal.testing" />
+    </content>
+    <content url="file://$MODULE_DIR$/javatests">
+      <sourceFolder url="file://$MODULE_DIR$/javatests" isTestSource="false" />
+    </content>
+    <content url="file://$MODULE_DIR$/webapps/selftest" />
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="gwt-user" level="project" />
+    <orderEntry type="module" module-name="TestGal" />
+    <orderEntry type="library" name="junit" level="project" />
+  </component>
+</module>
+

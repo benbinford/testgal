@@ -1,0 +1,17 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="SelfTestWebApp">
+    <output-path>$PROJECT_DIR$/out/artifacts/SelfTestWebApp</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="SelfTestApp" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="gwt-user" />
+        </element>
+      </element>
+      <element id="gwt-compiler-output" facet="SelfTestApp/gwt/GWT" />
+      <element id="javaee-facet-resources" facet="SelfTestApp/web/Web" />
+    </root>
+  </artifact>
+</component>

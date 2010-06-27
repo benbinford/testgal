@@ -1,0 +1,29 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Run self tests (web mode)" type="GoogleAppEngineDevServer" factoryName="Local" APPLICATION_SERVER_NAME="AppEngine 1.3.4">
+    <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/com.google.gwt.testgal.gallery.Gallery/gallery.html" />
+    <server-settings>
+      <option name="artifact" value="SelfTestWebApp" />
+    </server-settings>
+    <RunnerSettings RunnerId="Run" />
+    <ConfigurationWrapper VM_VAR="" RunnerId="Run">
+      <option name="USE_ENV_VARIABLES" value="true" />
+      <STARTUP>
+        <option name="USE_DEFAULT" value="true" />
+        <option name="SCRIPT" value="" />
+        <option name="VM_PARAMETERS" value="" />
+        <option name="PROGRAM_PARAMETERS" value="" />
+      </STARTUP>
+      <SHUTDOWN>
+        <option name="USE_DEFAULT" value="true" />
+        <option name="SCRIPT" value="" />
+        <option name="VM_PARAMETERS" value="" />
+        <option name="PROGRAM_PARAMETERS" value="" />
+      </SHUTDOWN>
+    </ConfigurationWrapper>
+    <method>
+      <option name="BuildArtifacts" enabled="true">
+        <artifact name="SelfTestWebApp" />
+      </option>
+    </method>
+  </configuration>
+</component>

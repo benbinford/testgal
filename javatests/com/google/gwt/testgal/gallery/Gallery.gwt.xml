@@ -1,0 +1,11 @@
+<module>
+
+    <inherits name="com.google.gwt.testgal.TestSuite"/>
+    <inherits name="com.google.gwt.testgal.TestGal"/>
+
+    <entry-point class='com.google.gwt.testgal.gallery.client.Gallery'/>
+
+    <!-- turn on rebinding because we explicitly turned it off in the test suite -->
+    <set-property name="testgal.rebind" value="testcase"/>
+
+</module>
