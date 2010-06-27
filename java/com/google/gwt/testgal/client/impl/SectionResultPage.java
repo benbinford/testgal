@@ -76,7 +76,6 @@ class SectionResultPage extends Composite {
     Label header = new Label(method.getName());
     header.addStyleName("tg-section-method");
     header.addClickHandler(new ClickHandler() {
-      @Override
       public void onClick(ClickEvent event) {
         Pages.changePage(Pages.makeResultPageId(section, method), history);
       }

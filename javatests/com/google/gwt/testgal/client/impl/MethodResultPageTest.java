@@ -219,7 +219,6 @@ public class MethodResultPageTest extends TestGalTestCase {
   private Widget makeButtonDemo() {
     Button demo = new Button("Press Me");
     demo.addClickHandler(new ClickHandler() {
-      @Override
       public void onClick(ClickEvent event) {
         Window.alert("hello");
       }

@@ -34,13 +34,11 @@ public class HoverListener implements MouseOverHandler, MouseOutHandler {
     this.hoverStyle = hoverStyle;
   }
 
-  @Override
   public void onMouseOver(MouseOverEvent event) {
     Widget sender = (Widget) event.getSource();
     sender.addStyleName(hoverStyle);
   }
 
-  @Override
   public void onMouseOut(MouseOutEvent event) {
     Widget sender = (Widget) event.getSource();
     sender.removeStyleName(hoverStyle);

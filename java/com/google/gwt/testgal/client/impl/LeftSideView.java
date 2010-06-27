@@ -46,7 +46,6 @@ class LeftSideView extends Composite {
     initWidget(tree);
 
     history.register(new ValueChangeHandler<String>() {
-      @Override
       public void onValueChange(ValueChangeEvent<String> event) {
         pageChanged(event.getValue());
       }
@@ -109,7 +108,6 @@ class LeftSideView extends Composite {
 
     testTreeView.addSelectionHandler(new SelectionHandler<TreeItem>() {
 
-      @Override
       public void onSelection(SelectionEvent<TreeItem> event) {
         TreeItem item = event.getSelectedItem();
         Object object = item.getUserObject();

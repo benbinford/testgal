@@ -40,7 +40,6 @@ class RightSideView extends Composite {
     initWidget(panel);
 
     history.register(new ValueChangeHandler<String>() {
-      @Override
       public void onValueChange(ValueChangeEvent<String> event) {
         pageChanged(event.getValue());
       }

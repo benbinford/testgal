@@ -50,12 +50,10 @@ public class FakePageHistory implements PageHistory {
   public void changePage(String pageId) {
     history.add(pageId);
     ValueChangeEvent.fire(new HasValueChangeHandlers<String>() {
-      @Override
       public void fireEvent(GwtEvent<?> event) {
         handlers.fireEvent(event);
       }
 
-      @Override
       public HandlerRegistration addValueChangeHandler(
           ValueChangeHandler<String> handler) {
         throw new UnsupportedOperationException();

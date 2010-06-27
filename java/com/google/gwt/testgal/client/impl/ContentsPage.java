@@ -78,7 +78,6 @@ class ContentsPage extends Composite {
     Label header = new Label(section.getName());
     header.addStyleName("tg-contents-heading");
     header.addClickHandler(new ClickHandler() {
-      @Override
       public void onClick(ClickEvent event) {
         Pages.changePage(Pages.makeResultPageId(section), history);
       }
