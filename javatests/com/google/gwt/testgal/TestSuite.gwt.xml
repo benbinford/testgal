@@ -1,8 +1,8 @@
 <module>
 
   <!--
-    A module containing TestGal's self tests.  (Not needed to use TestGal in
-    to run your own tests.) This module can be used directly when running TestGal's
+    A module containing TestGal's self tests. (You don't need this module to use
+    TestGal for your own tests.) This module can be used directly when running TestGal's
     self tests in a different test runner, or inherited to run TestGal's self tests
     with TestGal.
   -->
@@ -18,6 +18,6 @@
     <source path="api/shared"/>
     <entry-point class='com.google.gwt.testgal.api.client.EmptyEntryPoint'/>
 
-    <!-- turn off rebind so we can run tests with an alternate test runner. -->
+    <!-- Turn off rebind so we can run tests with an alternate test runner. -->
     <set-property name="testgal.rebind" value="none"/>
 </module>
