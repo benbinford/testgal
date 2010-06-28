@@ -4,7 +4,7 @@
      The core TestGal module. You should inherit from this module in order
      to run your own tests using TestGal.
 
-     However, you should *not* inherit from this module when we running your
+     However, you should *not* inherit from this module when running your
      tests in some other test runner. This is because TestGal redefines
      GWTTestCase in such a way that other test runners probably won't work.
      (This is done in super/com/google/gwt/junit/client/GWTTestCase.)
