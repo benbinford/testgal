@@ -1,2 +1,5 @@
 ^out/
+^webapps/devmode/WEB-INF/classes
+^webapps/devmode/WEB-INF/lib
+^webapps/devmode/com.google.gwt.testgal.gallery.Gallery/
 
