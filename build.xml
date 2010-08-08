@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<project name="TestGal" basedir=".">
+
+  <!-- Arguments to gwtc and devmode targets -->
+  <property name="gwt.args" value="" />
+
+  <!-- Configure path to GWT SDK -->
+  <property name="gwt.sdk" location="/Users/skybrian/Library/JavaLibraries/gwt-2.0.3" />
+  
+  <property name="war" location="webapps/devmode"/>
+  
+  <path id="project.class.path">
+    <pathelement location="${war}/WEB-INF/classes"/>
+    <pathelement location="${gwt.sdk}/gwt-user.jar"/>
+    <fileset dir="${gwt.sdk}" includes="gwt-dev*.jar"/>
+    <pathelement location="lib/junit.jar" />
+    <fileset dir="${war}/WEB-INF/lib" includes="**/*.jar"/>
+  </path>
+  
+  <target name="libs" description="Copy libs to WEB-INF/lib">
+    <mkdir dir="${war}/WEB-INF/lib" />
+    <copy todir="${war}/WEB-INF/lib" file="${gwt.sdk}/gwt-servlet.jar" />
+    <!-- Add any additional server libs that need to be copied -->
+  </target>
+  
+  <!-- compile for devmode -->
+  <target name="javac" depends="libs" description="Compile java source">
+    <mkdir dir="${war}/WEB-INF/classes"/>
+    <javac srcdir="java" includes="**" encoding="utf-8"
+        destdir="${war}/WEB-INF/classes"
+        source="1.5" target="1.5"
+        debug="true" debuglevel="lines,vars,source">
+      <classpath refid="project.class.path"/>
+    </javac>
+    <copy todir="${war}/WEB-INF/classes">
+      <fileset dir="java" excludes="**/*.java"/>
+    </copy>
+
+    <javac srcdir="javatests" includes="**" encoding="utf-8"
+        destdir="${war}/WEB-INF/classes"
+        source="1.5" target="1.5"
+        debug="true" debuglevel="lines,vars,source">
+      <classpath refid="project.class.path"/>
+    </javac>
+    <copy todir="${war}/WEB-INF/classes">
+      <fileset dir="javatests" excludes="**/*.java">
+      </fileset>
+    </copy>
+  </target>
+
+  <target name="devmode" depends="javac" description="Run development mode">
+    <java failonerror="true" fork="true" classname="com.google.gwt.dev.DevMode">
+      <classpath>
+        <pathelement location="java"/>
+        <pathelement location="javatests"/>
+        <path refid="project.class.path"/>
+      </classpath>
+      <jvmarg value="-Xmx256M"/>
+      <arg value="-war"/>
+      <arg value="${war}"/>
+      <arg value="-startupUrl"/>
+      <arg value="/com.google.gwt.testgal.gallery.Gallery/gallery.html"/>
+      <!-- Additional arguments like -style PRETTY or -logLevel DEBUG -->
+      <arg line="${gwt.args}"/>
+      <arg value="com.google.gwt.testgal.gallery.Gallery"/>
+    </java>
+  </target>
+  
+  
+  
+</project>
